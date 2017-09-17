@@ -11,7 +11,7 @@ class StatusWizard extends React.Component {
 
     render() {
         return (
-          <StatusBar></StatusBar>
+          <StatusBar componentId="wizerd"  states="ARHAM"></StatusBar>
         );
     }
 }

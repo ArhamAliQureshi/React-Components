@@ -26,8 +26,8 @@ class EntityWorkBoard extends React.Component {
         {title: "Dispute Filed", data: "disputeFiled"},
         {
           title: "Actions", data: "orderId", render: () => {
-          <Popover content="<h1>HI</h1>" title="Title"><Button type="primary">Hover me</Button></Popover>
-          return ''+{};
+
+          return '<h1>HI</h1>';
         }
         }
       ],
