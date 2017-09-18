@@ -1,43 +1,46 @@
 import React, {PropTypes} from 'react';
-import { Table } from 'antd';
+import { Steps } from 'antd';
+const Step = Steps.Step;
+import 'antd/dist/antd.css';
+import '../../styles/StyleFixses.scss';
+import styled from 'styled-components';
 
-const columns = [{
-  title: 'Name',
-  dataIndex: 'name',
-}, {
-  title: 'Age',
-  dataIndex: 'age',
-}, {
-  title: 'Address',
-  dataIndex: 'address',
-}];
-const data = [{
-  key: '1',
-  name: 'John Brown',
-  age: 32,
-  address: 'New York No. 1 Lake Park',
-}, {
-  key: '2',
-  name: 'Jim Green',
-  age: 42,
-  address: 'London No. 1 Lake Park',
-}, {
-  key: '3',
-  name: 'Joe Black',
-  age: 32,
-  address: 'Sidney No. 1 Lake Park',
-}];
+const Wrapper = styled.section`
+  padding: 20px;
+`;
 
-const StatusBar = ({componentId, states}) =>{
+
+
+const StatusBar = ({states}) =>{
+  /*This is sample Data*/
+  // states = [{
+  //   status: "finish", title: "Initiation"
+  // },{
+  //   status: "process", title: "Approved"
+  // },{
+  //   status: "error", title: "To GRP"
+  // },{
+  //   status: "wait", title: "Disbursed"
+  // },{
+  //   status: "wait", title: "Debit from Account"
+  // }];
+  /*This is sample Data*/
+
+  let stepList = states.map((state, index) => {
+    return <Step key={index} status={state.status} title={state.title} />;
+  });
 
   return (
-    <div>
-      <h4>Middle size table</h4>
-      <Table columns={columns} dataSource={data} size="middle" />
-      <h4>Small size table</h4>
-      <Table columns={columns} dataSource={data} size="small" />
-    </div>
+    <Wrapper data-type="my-steps-no-trail">
+      <Steps>
+        {stepList}
+      </Steps>
+    </Wrapper>
   );
+};
+
+StatusBar.propTypes = {
+  states: PropTypes.array.isRequired
 };
 
 export default StatusBar;

@@ -7,11 +7,25 @@ import StatusBar from './common/StatusBar.jsx';
 class StatusWizard extends React.Component {
     constructor(props, context) {
         super(props, context);
+
+        this.state = {
+          stepsStates: [{
+            status: "finish", title: "Initiation"
+          },{
+            status: "process", title: "Approved"
+          },{
+            status: "error", title: "To GRP"
+          },{
+            status: "wait", title: "Disbursed"
+          },{
+            status: "wait", title: "Debit from Account"
+          }]
+        };
     }
 
     render() {
         return (
-          <StatusBar componentId="wizerd"  states="ARHAM"></StatusBar>
+          <StatusBar componentId="wizerd"  states={this.state.stepsStates}></StatusBar>
         );
     }
 }
