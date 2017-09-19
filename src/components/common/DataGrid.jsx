@@ -74,7 +74,6 @@ class DataGrid extends React.Component {
   }
 
   render() {
-    console.log("INNER", this.state.gridData);
     return (
       <div>
         <h1>{this.state.title}</h1>

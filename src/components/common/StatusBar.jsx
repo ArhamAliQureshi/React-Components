@@ -31,7 +31,7 @@ const StatusBar = ({states}) =>{
   });
 
   return (
-    <Wrapper data-type="my-steps-no-trail">
+    <Wrapper>
       <Steps>
         {stepList}
       </Steps>

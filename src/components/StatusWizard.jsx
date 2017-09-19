@@ -37,7 +37,7 @@ StatusWizard.propTypes = {
 function mapStateToProps(state, ownProps) {
     return {
         state: state
-    }
+    };
 }
 
 function mapDispatchToProps(dispatch) {

@@ -6,7 +6,7 @@ import { Route } from 'react-router';
 import { Switch } from 'react-router-dom';
 import EntityWorkBoard from './EntityWorkBoard.jsx';
 import StatusWizard from './StatusWizard.jsx';
-import EntitySearch from './EntitySearch.jsx';
+import EntitySearch from './EntitySearch/EntitySearch.jsx';
 // import HomePage from './HomePage';
 import FuelSavingsPage from '../containers/FuelSavingsPage';
 import AboutPage from './AboutPage';
