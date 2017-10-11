@@ -1,28 +1,28 @@
 import React, {PropTypes} from 'react';
 import {connect} from 'react-redux';
 import $ from 'jquery';
-// BEGIN GLOBAL MANDATORY STYLES
-import '../metronic/assets/googleapis.css.css';
-import '../metronic/assets/global/plugins/font-awesome/css/font-awesome.min.css';
-import '../metronic/assets/global/plugins/simple-line-icons/simple-line-icons.min.css';
-import '../metronic/assets/global/plugins/bootstrap/css/bootstrap.min.css';
-import '../metronic/assets/global/plugins/bootstrap-switch/css/bootstrap-switch.min.css';
-// END GLOBAL MANDATORY STYLES
-// BEGIN PAGE LEVEL PLUGINS
-import '../metronic/assets/global/plugins/datatables/datatables.min.css';
-import '../metronic/assets/global/plugins/datatables/buttons.dataTables.min.css';
-import '../metronic/assets/global/plugins/datatables/plugins/bootstrap/datatables.bootstrap.css';
-// END PAGE LEVEL PLUGINS
-// BEGIN THEME GLOBAL STYLES
-import '../metronic/assets/global/css/components.min.css';
-import '../metronic/assets/global/css/plugins.min.css';
-// END THEME GLOBAL STYLES
-// BEGIN THEME LAYOUT STYLES
-import '../metronic/assets/layouts/layout2/css/layout.min.css';
-// import './metronic/assets/layouts/layout2/css/themes/blue.min.css';
-import '../metronic/assets/layouts/layout2/css/custom.min.css';
-// END THEME LAYOUT STYLES
-
+// // BEGIN GLOBAL MANDATORY STYLES
+// import '../metronic/assets/googleapis.css.css';
+// import '../metronic/assets/global/plugins/font-awesome/css/font-awesome.min.css';
+// import '../metronic/assets/global/plugins/simple-line-icons/simple-line-icons.min.css';
+// import '../metronic/assets/global/plugins/bootstrap/css/bootstrap.min.css';
+// import '../metronic/assets/global/plugins/bootstrap-switch/css/bootstrap-switch.min.css';
+// // END GLOBAL MANDATORY STYLES
+// // BEGIN PAGE LEVEL PLUGINS
+// import '../metronic/assets/global/plugins/datatables/datatables.min.css';
+// import '../metronic/assets/global/plugins/datatables/buttons.dataTables.min.css';
+// import '../metronic/assets/global/plugins/datatables/plugins/bootstrap/datatables.bootstrap.css';
+// // END PAGE LEVEL PLUGINS
+// // BEGIN THEME GLOBAL STYLES
+// import '../metronic/assets/global/css/components.min.css';
+// import '../metronic/assets/global/css/plugins.min.css';
+// // END THEME GLOBAL STYLES
+// // BEGIN THEME LAYOUT STYLES
+// import '../metronic/assets/layouts/layout2/css/layout.min.css';
+// // import './metronic/assets/layouts/layout2/css/themes/blue.min.css';
+// import '../metronic/assets/layouts/layout2/css/custom.min.css';
+// // END THEME LAYOUT STYLES
+//
 
 $.DataTable = require('datatables.net');
 

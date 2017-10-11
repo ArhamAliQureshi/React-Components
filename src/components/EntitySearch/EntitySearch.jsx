@@ -20,7 +20,7 @@ class EntitySearch extends React.Component {
 
   render() {
     return (
-      <EntitySearchFilter onSubmit={this.filterSubmitHandler}></EntitySearchFilter>
+      <EntitySearchFilter onSubmit={this.filterSubmitHandler} />
     );
   }
 }

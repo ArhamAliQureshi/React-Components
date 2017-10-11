@@ -1,7 +1,7 @@
 import React, {PropTypes} from 'react';
-import { Steps } from 'antd';
+// import { Steps } from 'antd';
 const Step = Steps.Step;
-import 'antd/dist/antd.css';
+// import 'antd/dist/antd.css';
 import '../../styles/StyleFixses.scss';
 import styled from 'styled-components';
 

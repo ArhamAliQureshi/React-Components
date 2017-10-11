@@ -2,7 +2,7 @@ import React, {PropTypes} from 'react';
 import {connect} from 'react-redux';
 import DataGrid from './common/DataGrid.jsx';
 import {bindActionCreators} from 'redux';
-import {Popover, Button} from 'antd';
+// import {Popover, Button} from 'antd';
 import * as entityActions from '../actions/entityActions';
 
 class EntityWorkBoard extends React.Component {

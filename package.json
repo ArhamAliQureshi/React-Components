@@ -31,7 +31,6 @@
   "author": "Cory House",
   "license": "MIT",
   "dependencies": {
-    "antd": "2.13.1",
     "axios": "0.16.2",
     "datatables.net": "1.10.16",
     "datatables.net-dt": "1.10.16",
@@ -39,6 +38,7 @@
     "object-assign": "4.1.0",
     "react": "15.5.4",
     "react-dom": "15.5.4",
+    "react-dropzone-component": "2.0.0",
     "react-redux": "5.0.5",
     "react-router": "4.2.0",
     "react-router-dom": "4.0.0",
